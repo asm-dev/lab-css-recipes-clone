@@ -40,7 +40,33 @@ li {
 .information-img {
     display: block;
     margin: auto;
-    width: 60%;
+    width: 20rem;
     padding: 2em 0;
 }
 
+ul.dashed {
+    list-style-type: none;
+    padding-left: 0.5em;
+}
+
+ul.dashed > li:before {
+    content: "- ";
+}
+
+ol.styled {
+    padding-left: 0.5em;
+    counter-reset: item;
+}
+
+ol.styled >li {
+    counter-increment: item;
+    list-style-type: none;
+}
+
+ol.styled > li:before {
+    content: counter(item) ") ";
+}
+
+.section > h2 {
+    padding: 2vw 0;
+}

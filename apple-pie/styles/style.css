@@ -29,9 +29,18 @@ h1 {
     font-weight: 100;
 }
 
+h2 {
+    font-size: 18px;
+}
+
+li {
+    font-size: 16px;
+}
+
 .information-img {
     display: block;
     margin: auto;
     width: 60%;
     padding: 2em 0;
 }
+
